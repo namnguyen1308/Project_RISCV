@@ -1,0 +1,6 @@
+0.7
+2020.2
+Oct 13 2023
+20:47:58
+D:/verilog_projects/RISC-V-RV32IM/RISC-V-RV32IM.sim/sim_1/synth/func/xsim/CPU_RiscV_IM_tb2_func_synth.v,1733824770,verilog,,D:/verilog_projects/RISC-V-RV32IM/RISC-V-RV32IM.srcs/sim_1/new/CPU_RiscV_IM_tb2.v,,ALU;CPU_RiscV_IM;Data_Memory;EX_MEM;ID_EX;IF_ID;Instruction_Memory;MEM_WB;Registers;glbl,,,,,,,,
+D:/verilog_projects/RISC-V-RV32IM/RISC-V-RV32IM.srcs/sim_1/new/CPU_RiscV_IM_tb2.v,1733824764,verilog,,,,CPU_RiscV_IM_tb2,,,,,,,,

@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Wed Dec 11 03:10:44 2024
+# Process ID: 11696
+# Current directory: D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.runs/impl_1
+# Command line: vivado.exe -log CPU_RiscV_IM.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source CPU_RiscV_IM.tcl -notrace
+# Log file: D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.runs/impl_1/CPU_RiscV_IM.vdi
+# Journal file: D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.runs/impl_1\vivado.jou
+# Running On: Raven1911, OS: Windows, CPU Frequency: 2688 MHz, CPU Physical cores: 10, Host memory: 16868 MB
+#-----------------------------------------------------------
+source CPU_RiscV_IM.tcl -notrace

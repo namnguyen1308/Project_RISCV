@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"CPU_RiscV_IM_tb2_func_synth.v" \
+"../../../../../RISC-V-RV32IM.srcs/sim_1/new/CPU_RiscV_IM_tb2.v" \
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,439 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Wed Dec 11 03:09:33 2024
+# Process ID: 7796
+# Current directory: D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.runs/synth_1
+# Command line: vivado.exe -log CPU_RiscV_IM.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source CPU_RiscV_IM.tcl
+# Log file: D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.runs/synth_1/CPU_RiscV_IM.vds
+# Journal file: D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.runs/synth_1\vivado.jou
+# Running On: Raven1911, OS: Windows, CPU Frequency: 2688 MHz, CPU Physical cores: 10, Host memory: 16868 MB
+#-----------------------------------------------------------
+source CPU_RiscV_IM.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental {D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.srcs/utils_1/imports/synth_1/PC.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.srcs/utils_1/imports/synth_1/PC.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top CPU_RiscV_IM -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 10768
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1351.430 ; gain = 439.750
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-9398] empty port in module declaration [D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.srcs/sources_1/new/PC.v:29]
+CRITICAL WARNING: [Synth 8-9339] data object 'EX_MEM_ALUResult_o' is already declared [D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.srcs/sources_1/new/CPU_RiscV_IM.v:171]
+INFO: [Synth 8-6826] previous declaration of 'EX_MEM_ALUResult_o' is from here [D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.srcs/sources_1/new/CPU_RiscV_IM.v:144]
+CRITICAL WARNING: [Synth 8-11152] second declaration of 'EX_MEM_ALUResult_o' is ignored [D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.srcs/sources_1/new/CPU_RiscV_IM.v:171]
+CRITICAL WARNING: [Synth 8-9339] data object 'VALU_v_o' is already declared [D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.srcs/sources_1/new/CPU_RiscV_IM.v:172]
+INFO: [Synth 8-6826] previous declaration of 'VALU_v_o' is from here [D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.srcs/sources_1/new/CPU_RiscV_IM.v:154]
+CRITICAL WARNING: [Synth 8-11152] second declaration of 'VALU_v_o' is ignored [D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.srcs/sources_1/new/CPU_RiscV_IM.v:172]
+CRITICAL WARNING: [Synth 8-9339] data object 'start_i_n' is already declared [D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.srcs/sources_1/new/CPU_RiscV_IM.v:178]
+INFO: [Synth 8-6826] previous declaration of 'start_i_n' is from here [D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.srcs/sources_1/new/CPU_RiscV_IM.v:49]
+CRITICAL WARNING: [Synth 8-11152] second declaration of 'start_i_n' is ignored [D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.srcs/sources_1/new/CPU_RiscV_IM.v:178]
+INFO: [Synth 8-6157] synthesizing module 'CPU_RiscV_IM' [D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.srcs/sources_1/new/CPU_RiscV_IM.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Mux2to1' [D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.srcs/sources_1/new/Mux2to1.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Mux2to1' (0#1) [D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.srcs/sources_1/new/Mux2to1.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PC' [D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.srcs/sources_1/new/PC.v:23]
+WARNING: [Synth 8-308] ignoring empty port [D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.srcs/sources_1/new/PC.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (0#1) [D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.srcs/sources_1/new/PC.v:23]
+WARNING: [Synth 8-7023] instance 'PC' of module 'PC' has 6 connections declared, but only 5 given [D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.srcs/sources_1/new/CPU_RiscV_IM.v:287]
+INFO: [Synth 8-6157] synthesizing module 'Adder' [D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.srcs/sources_1/new/Adder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Adder' (0#1) [D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.srcs/sources_1/new/Adder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Instruction_Memory' [D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.srcs/sources_1/new/Instruction_Memory.v:23]
+INFO: [Synth 8-226] default block is never used [D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.srcs/sources_1/new/Instruction_Memory.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'Instruction_Memory' (0#1) [D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.srcs/sources_1/new/Instruction_Memory.v:23]
+INFO: [Synth 8-6157] synthesizing module 'IF_ID' [D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.srcs/sources_1/new/IF_ID.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'IF_ID' (0#1) [D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.srcs/sources_1/new/IF_ID.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.srcs/sources_1/new/ALU.v:23]
+WARNING: [Synth 8-151] case item 3'b010 is unreachable [D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.srcs/sources_1/new/ALU.v:56]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (0#1) [D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Shift_Left1' [D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.srcs/sources_1/new/Shift_Left1.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'Shift_Left1' (0#1) [D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.srcs/sources_1/new/Shift_Left1.v:22]
+INFO: [Synth 8-6157] synthesizing module 'Sign_Extend' [D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.srcs/sources_1/new/Sign_Extend.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Sign_Extend' (0#1) [D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.srcs/sources_1/new/Sign_Extend.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Control' [D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.srcs/sources_1/new/Control.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Control' (0#1) [D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.srcs/sources_1/new/Control.v:23]
+WARNING: [Synth 8-7071] port 'RegDst_o' of module 'Control' is unconnected for instance 'Control' [D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.srcs/sources_1/new/CPU_RiscV_IM.v:354]
+WARNING: [Synth 8-7071] port 'VMemWr_o' of module 'Control' is unconnected for instance 'Control' [D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.srcs/sources_1/new/CPU_RiscV_IM.v:354]
+WARNING: [Synth 8-7071] port 'Branch_o' of module 'Control' is unconnected for instance 'Control' [D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.srcs/sources_1/new/CPU_RiscV_IM.v:354]
+WARNING: [Synth 8-7023] instance 'Control' of module 'Control' has 11 connections declared, but only 8 given [D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.srcs/sources_1/new/CPU_RiscV_IM.v:354]
+INFO: [Synth 8-6157] synthesizing module 'Hazard_Detect' [D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.srcs/sources_1/new/Hazard_Detect.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Hazard_Detect' (0#1) [D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.srcs/sources_1/new/Hazard_Detect.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Mux_Control' [D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.srcs/sources_1/new/Mux_Control.v:22]
+INFO: [Synth 8-226] default block is never used [D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.srcs/sources_1/new/Mux_Control.v:49]
+INFO: [Synth 8-6155] done synthesizing module 'Mux_Control' (0#1) [D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.srcs/sources_1/new/Mux_Control.v:22]
+INFO: [Synth 8-6157] synthesizing module 'Registers' [D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.srcs/sources_1/new/Registers.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Registers' (0#1) [D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.srcs/sources_1/new/Registers.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ID_EX' [D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.srcs/sources_1/new/ID_EX.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ID_EX' (0#1) [D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.srcs/sources_1/new/ID_EX.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU_Control' [D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.srcs/sources_1/new/ALU_Control.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ALU_Control' (0#1) [D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.srcs/sources_1/new/ALU_Control.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ForwardingUnit' [D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.srcs/sources_1/new/ForwardingUnit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ForwardingUnit' (0#1) [D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.srcs/sources_1/new/ForwardingUnit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ForwardingMUX' [D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.srcs/sources_1/new/ForwardingMUX.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ForwardingMUX' (0#1) [D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.srcs/sources_1/new/ForwardingMUX.v:23]
+INFO: [Synth 8-6157] synthesizing module 'EX_MEM' [D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.srcs/sources_1/new/EX_MEM.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'EX_MEM' (0#1) [D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.srcs/sources_1/new/EX_MEM.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Data_Memory' [D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.srcs/sources_1/new/Data_Memory.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'Data_Memory' (0#1) [D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.srcs/sources_1/new/Data_Memory.v:22]
+INFO: [Synth 8-6157] synthesizing module 'MEM_WB' [D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.srcs/sources_1/new/MEM_WB.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'MEM_WB' (0#1) [D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.srcs/sources_1/new/MEM_WB.v:23]
+INFO: [Synth 8-6157] synthesizing module 'VALU' [D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.srcs/sources_1/new/VALU.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'VALU' (0#1) [D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.srcs/sources_1/new/VALU.v:23]
+INFO: [Synth 8-6157] synthesizing module 'VALU_ctrl' [D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.srcs/sources_1/new/VALU_ctrl.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'VALU_ctrl' (0#1) [D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.srcs/sources_1/new/VALU_ctrl.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'CPU_RiscV_IM' (0#1) [D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.srcs/sources_1/new/CPU_RiscV_IM.v:23]
+WARNING: [Synth 8-6014] Unused sequential element quad_d1_reg was removed.  [D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.srcs/sources_1/new/Instruction_Memory.v:95]
+WARNING: [Synth 8-7137] Register memory_reg[63] in module Instruction_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.srcs/sources_1/new/Instruction_Memory.v:53]
+WARNING: [Synth 8-3848] Net VMemWr_o in module/entity Control does not have driver. [D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.srcs/sources_1/new/Control.v:44]
+WARNING: [Synth 8-7137] Register easter_egg_reg in module CPU_RiscV_IM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.srcs/sources_1/new/CPU_RiscV_IM.v:246]
+WARNING: [Synth 8-7129] Port VMemWr_o in module Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_i[31] in module Shift_Left1 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1508.297 ; gain = 596.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1508.297 ; gain = 596.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1508.297 ; gain = 596.617
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.079 . Memory (MB): peak = 1508.297 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.srcs/constrs_1/imports/Week1/Arty-Z7-20-Master.xdc]
+Finished Parsing XDC File [D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.srcs/constrs_1/imports/Week1/Arty-Z7-20-Master.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1611.043 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1611.043 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:13 . Memory (MB): peak = 1611.043 ; gain = 699.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:13 . Memory (MB): peak = 1611.043 ; gain = 699.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:13 . Memory (MB): peak = 1611.043 ; gain = 699.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 1611.043 ; gain = 699.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
+	   3 Input   32 Bit       Adders := 2     
+	   4 Input   32 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 4     
+	   3 Input    8 Bit       Adders := 4     
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 145   
+	               12 Bit    Registers := 1     
+	                8 Bit    Registers := 36    
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 5     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 18    
++---Multipliers : 
+	              32x32  Multipliers := 2     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 73    
+	   4 Input   32 Bit        Muxes := 67    
+	   6 Input   32 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 99    
+	   4 Input    8 Bit        Muxes := 19    
+	   2 Input    5 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	   9 Input    3 Bit        Muxes := 1     
+	   4 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 2     
+	   7 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 3     
+	   4 Input    2 Bit        Muxes := 3     
+	   5 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 78    
+	   7 Input    1 Bit        Muxes := 6     
+	   5 Input    1 Bit        Muxes := 24    
+	   4 Input    1 Bit        Muxes := 8     
+	   3 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP data_o0, operation Mode is: A*B.
+DSP Report: operator data_o0 is absorbed into DSP data_o0.
+DSP Report: operator data_o0 is absorbed into DSP data_o0.
+DSP Report: Generating DSP data_o0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator data_o0 is absorbed into DSP data_o0.
+DSP Report: operator data_o0 is absorbed into DSP data_o0.
+DSP Report: Generating DSP data_o0, operation Mode is: A*B.
+DSP Report: operator data_o0 is absorbed into DSP data_o0.
+DSP Report: operator data_o0 is absorbed into DSP data_o0.
+DSP Report: Generating DSP data_o0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator data_o0 is absorbed into DSP data_o0.
+DSP Report: operator data_o0 is absorbed into DSP data_o0.
+DSP Report: Generating DSP data_o0, operation Mode is: A*B.
+DSP Report: operator data_o0 is absorbed into DSP data_o0.
+DSP Report: operator data_o0 is absorbed into DSP data_o0.
+DSP Report: Generating DSP data_o0, operation Mode is: A*B.
+DSP Report: operator data_o0 is absorbed into DSP data_o0.
+DSP Report: operator data_o0 is absorbed into DSP data_o0.
+DSP Report: Generating DSP data_o0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator data_o0 is absorbed into DSP data_o0.
+DSP Report: operator data_o0 is absorbed into DSP data_o0.
+DSP Report: Generating DSP v_o3, operation Mode is: A*B.
+DSP Report: operator v_o3 is absorbed into DSP v_o3.
+DSP Report: Generating DSP v_o2, operation Mode is: A*B.
+DSP Report: operator v_o2 is absorbed into DSP v_o2.
+DSP Report: Generating DSP v_o1, operation Mode is: A*B.
+DSP Report: operator v_o1 is absorbed into DSP v_o1.
+DSP Report: Generating DSP v_o3, operation Mode is: A*B.
+DSP Report: operator v_o3 is absorbed into DSP v_o3.
+WARNING: [Synth 8-7129] Port addr_i[31] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[30] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[29] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[28] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[27] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[26] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[25] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[24] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[23] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[22] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[21] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[20] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[19] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[18] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[17] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[16] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[15] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[14] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[13] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[12] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[11] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[10] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[9] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[8] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[1] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[0] in module Instruction_Memory is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:25 . Memory (MB): peak = 1611.043 ; gain = 699.363
+---------------------------------------------------------------------------------
+ Sort Area is  data_o0_0 : 0 0 : 3101 5879 : Used 1 time 0
+ Sort Area is  data_o0_0 : 0 1 : 2778 5879 : Used 1 time 0
+ Sort Area is  data_o0_3 : 0 0 : 2759 5418 : Used 1 time 0
+ Sort Area is  data_o0_3 : 0 1 : 2659 5418 : Used 1 time 0
+ Sort Area is  data_o0_6 : 0 0 : 3101 4856 : Used 1 time 0
+ Sort Area is  data_o0_6 : 0 1 : 1755 4856 : Used 1 time 0
+ Sort Area is  data_o0_8 : 0 0 : 2759 2759 : Used 1 time 0
+ Sort Area is  v_o1_b : 0 0 : 1946 1946 : Used 1 time 0
+ Sort Area is  v_o2_c : 0 0 : 1946 1946 : Used 1 time 0
+ Sort Area is  v_o3_9 : 0 0 : 1946 1946 : Used 1 time 0
+ Sort Area is  v_o3_d : 0 0 : 1946 1946 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|ALU         | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|VALU        | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|VALU        | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|VALU        | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|VALU        | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:32 . Memory (MB): peak = 1611.043 ; gain = 699.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:32 . Memory (MB): peak = 1611.043 ; gain = 699.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:33 . Memory (MB): peak = 1611.043 ; gain = 699.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:37 . Memory (MB): peak = 1621.227 ; gain = 709.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:37 . Memory (MB): peak = 1621.227 ; gain = 709.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:37 . Memory (MB): peak = 1621.227 ; gain = 709.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:37 . Memory (MB): peak = 1621.227 ; gain = 709.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:37 . Memory (MB): peak = 1621.227 ; gain = 709.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:37 . Memory (MB): peak = 1621.227 ; gain = 709.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping  | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|ALU         | A*B          | 17     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | PCIN>>17+A*B | 30     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|VALU        | A*B          | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|VALU        | A*B          | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|VALU        | A*B          | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|VALU        | A*B          | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     1|
+|2     |CARRY4  |    52|
+|3     |DSP48E1 |     7|
+|4     |LUT1    |     6|
+|5     |LUT2    |    70|
+|6     |LUT3    |   195|
+|7     |LUT4    |   174|
+|8     |LUT5    |   525|
+|9     |LUT6    |  2450|
+|10    |MUXF7   |   929|
+|11    |MUXF8   |   304|
+|12    |FDCE    |  3802|
+|13    |FDRE    |   110|
+|14    |IBUF    |    18|
+|15    |OBUF    |    12|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:37 . Memory (MB): peak = 1621.227 ; gain = 709.547
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 27 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:35 . Memory (MB): peak = 1621.227 ; gain = 606.801
+Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:37 . Memory (MB): peak = 1621.227 ; gain = 709.547
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.065 . Memory (MB): peak = 1633.312 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1292 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1636.922 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: adfdc948
+INFO: [Common 17-83] Releasing license: Synthesis
+69 Infos, 41 Warnings, 6 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:42 . Memory (MB): peak = 1636.922 ; gain = 1147.098
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1636.922 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/verilog_projects/RISC-V-RV32IM coppy 2/RISC-V-RV32IM.runs/synth_1/CPU_RiscV_IM.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file CPU_RiscV_IM_utilization_synth.rpt -pb CPU_RiscV_IM_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 11 03:10:22 2024...
